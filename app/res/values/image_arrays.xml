@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="clear_face_images">
+        <item>@raw/clear_face_1</item>
+        <item>@raw/clear_face_2</item>
+        <item>@raw/clear_face_3</item>
+        <item>@raw/clear_face_4</item>
+        <item>@raw/clear_face_5</item>
+        <item>@raw/clear_face_6</item>
+    </integer-array>
+    <integer-array name="blurry_face_images">
+        <item>@raw/blurry_face_1</item>
+        <item>@raw/blurry_face_2</item>
+        <item>@raw/blurry_face_3</item>
+    </integer-array>
+    <integer-array name="dog_images">
+        <item>@raw/dog_1</item>
+        <item>@raw/dog_2</item>
+        <item>@raw/dog_3</item>
+        <item>@raw/dog_4</item>
+        <item>@raw/dog_5</item>
+        <item>@raw/dog_6</item>
+    </integer-array>
+    <integer-array name="cat_images">
+        <item>@raw/cat_1</item>
+        <item>@raw/cat_2</item>
+        <item>@raw/cat_3</item>
+    </integer-array>
+    <integer-array name="landscape_images">
+        <item>@raw/landscape_1</item>
+        <item>@raw/landscape_2</item>
+        <item>@raw/landscape_3</item>
+        <item>@raw/landscape_4</item>
+        <item>@raw/landscape_5</item>
+        <item>@raw/landscape_6</item>
+    </integer-array>
+    <integer-array name="coffee_images">
+        <item>@raw/coffee_1</item>
+        <item>@raw/coffee_2</item>
+        <item>@raw/coffee_3</item>
+    </integer-array>
+</resources>
