@@ -9,16 +9,7 @@
 *.class
 
 # generated files
-bin
-gen
-app/bin
-app/gen
-tests/bin
-tests/gen
-doc
-
-# Local configuration file (sdk path, etc)
-local.properties
+IntentStub/build
 
 # Eclipse project files
 .classpath
@@ -31,4 +22,4 @@ local.properties
 .project
 .metadata
 
-rakefile.rb
+/.gradle

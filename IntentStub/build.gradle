@@ -1,0 +1,24 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.1"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 1
+        versionName "0.1"
+    }
+}
+
+android.applicationVariants.all { variant ->
+    def variantNameTitleCase = variant.name.substring(0, 1).toUpperCase() + variant.name.substring(1);
+    tasks.create(name: "installMulti"+variantNameTitleCase, type: Exec) {
+        def adb = "$System.env.ANDROID_HOME/platform-tools/adb"
+        group = "Install"
+        dependsOn "assemble$variantNameTitleCase"
+        description = "Installs the $variant.name build onto multiple devices"
+        commandLine "bash", "-c", "$adb devices | tail -n +2 | awk '{print \$1}' | xargs -I {} $adb -s {} install -r build/apk/IntentStub-${variant.name}-unaligned.apk"
+    }
+}
