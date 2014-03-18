@@ -29,17 +29,17 @@ public class GalleryStubActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-		
-		if (!Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+        
+        if (!Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
             Log.i(TAG, "External storage not available");
         } else {
             int imageResourceId = ImageProvider.getNextImageResourceId(this);
-	        File imageFile = new File(Environment.getExternalStorageDirectory(), getResources().getResourceEntryName(imageResourceId)+".jpg");
+            File imageFile = new File(Environment.getExternalStorageDirectory(), getResources().getResourceEntryName(imageResourceId)+".jpg");
             Util.copyFile(imageFile, imageResourceId, this);
             
             Intent intent = new Intent();
-			intent.setData(getImageContentUri(imageFile));
-			setResult(RESULT_OK, intent);
+            intent.setData(getImageContentUri(imageFile));
+            setResult(RESULT_OK, intent);
         }
 
         finish();

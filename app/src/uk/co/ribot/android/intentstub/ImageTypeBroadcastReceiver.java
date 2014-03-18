@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 
 public class ImageTypeBroadcastReceiver extends BroadcastReceiver {
-	public static String IMAGE_TYPE = "uk.co.ribot.android.intentstub.ImageTypeBroadcastReceiver.IMAGE_TYPE";
+    public static String IMAGE_TYPE = "uk.co.ribot.android.intentstub.ImageTypeBroadcastReceiver.IMAGE_TYPE";
     
     @Override
     public void onReceive(Context context, Intent intent) {
