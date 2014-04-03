@@ -34,6 +34,12 @@
                 <category android:name="android.intent.category.OPENABLE" />
                 <data android:mimeType="image/*" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="uk.co.ribot.android.intentstub.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
         </activity>
         <receiver android:name=".ImageTypeBroadcastReceiver" >
               <intent-filter>
